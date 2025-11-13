@@ -47,16 +47,20 @@ test_run_dir/
 */test_run_dir/
 *.vcd
 *.fst
+
+# Verilator generated files and build directories
 **/verilog/obj_dir/
-**/verilog/*.v
-**/verilog/*.fir
-**/verilog/*.anno.json
-**/verilog/*.vcd
-**/verilog/*.txt
-**/verilog/*.asmbin
-**/verilog/*.asmbin.txt
-**/verilog/verilator/
-!**/verilog/verilator/sim_main.cpp
+**/verilog/**/*.v
+**/verilog/**/*.fir
+**/verilog/**/*.anno.json
+**/verilog/**/*.vcd
+**/verilog/**/*.txt
+**/verilog/**/*.asmbin
+**/verilog/**/*.asmbin.txt
+
+# Exception: Keep Verilator source files (not generated)
+!**/verilog/verilator/sim.cpp
+!**/verilog/verilator/*.h
 
 ### RISCOF compliance test results
 */results/
