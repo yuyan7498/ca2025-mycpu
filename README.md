@@ -149,3 +149,7 @@ All components include detailed Scaladoc documentation which students should rea
 The `make test` command should be executed after each change to verify correctness through the ChiselTest validation suite.
 Students can use `make sim` with VCD output for debugging where GTKWave or Surfer provide signal trace visualization.
 The RISCOF compliance tests validate ISA conformance and passing all tests ensures the implementation meets architectural correctness requirements.
+
+## License
+This project is available under a permissive MIT-style license.
+Use of this source code is governed by a MIT license that can be found in the [LICENSE](LICENSE) file.
