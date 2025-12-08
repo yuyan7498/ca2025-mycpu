@@ -96,7 +96,7 @@ class CLINT extends Module {
   // 5. Jump to handler: PC ← mtvec
   //
   // Example:
-  // - Before: mstatus.MIE=1, mstatus.MPIE=? (don't care)
+  // - Before: mstatus.MIE=1, mstatus.MPIE unspecified (don't care)
   // - After:  mstatus.MIE=0, mstatus.MPIE=1 (saved previous enable state)
 
   // Check individual interrupt source enable based on interrupt type
